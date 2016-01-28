@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-br">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Derrubapp - Denuncie a derrubada de árvores</title>
+		<link href="estilos/sys.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="estilos/jquery.sidr.dark.css">
+	</head>
+
+	<body>
+	
+	<a id="simple-menu" href="#sidr"><img src="img/menu-icon.png" style="width:12%;" alt="Menu"></a>
+	
+	<div class="sidr" id="sidr">
+        <div class="txt-center">
+            <strong>Denunciar uma derrubada</strong><br><br>
+        </div>
+        <p>
+	Endereço:<br>
+	<input id="endereco" type="text">
+        </p>
+	<br>
+	<input class="bt-gerar" type="button" value="Enviar denúncia" onclick="adiciona();" />
+	</div>
+	
+	<div id="mapa" style="height:100%;"></div>
+
+        <!-- Include jQuery -->
+       <script src="js/jquery-min.js"></script>
+       <!-- Include the Sidr JS -->
+       <script src="js/jquery.sidr.min.js"></script>		
+       <script src="js/jquery.touchSwipe.min.js"></script>
+       <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+       <script src="js/main.js" type="text/javascript"></script>        
+        
+	</body>
+</html>
